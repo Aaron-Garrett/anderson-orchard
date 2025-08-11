@@ -1,0 +1,81 @@
+/* General Formatting */
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    text-align: left;
+    align-self: center;
+    justify-self: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Classes */
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 24;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.splashscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/splashscreen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.splashscreen h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.splashscreen p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* IDs */
+
+#u-pick {
+    background-color: #e0f7fa;
+}
+
+#apple-barn {
+    background-color: #ffe0b2;
+}
+
+#apple-festival {
+    background-color: #f1f8e9;
+}
+
+#playground {
+    background-color: #fce4ec;
+}
