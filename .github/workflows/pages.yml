@@ -16,7 +16,10 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install @fontsource/roboto
+          npm install @fontsource/open-sans
       - name: Deploy
         run: |
           npm run predeploy
