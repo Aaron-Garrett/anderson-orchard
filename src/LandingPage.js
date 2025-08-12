@@ -52,7 +52,7 @@ const LandingPage = () => {
 
     return (
         <main className="landing-page">
-            <div className="splashscreen">
+            <div media="(min-width: 768px)"  className="splashscreen">
                 <video
                     autoPlay
                     muted
@@ -91,8 +91,47 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
-            <article className="activities">
-                <h2 className="section-title">Activities</h2>
+            <div media="(max-width: 768px)" className="splashscreen">
+                <div className="top-splash">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    >
+                        <source src={require('./assets/splash_video.mp4')} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="content">
+                        <h1>Anderson Orchard</h1>
+                        <p>Your one-stop shop for fresh produce. <br />
+                            This is the company's first impression.</p>
+                    </div>
+                </div>
+                <div className="grown">
+                    <div className="grown-wrap">
+                        <div className="grown-intro">How We've Grown</div>
+                        <div className="counts-wrap">
+                            <div className="count supported">
+                                <div className="count-title">Years in Service</div>
+                                <div className="count-number">{yearCount}</div>
+                            </div>
+                            <div className="count planted">
+                                <div className="count-title">No. of Apple Varieties</div>
+                                <div className="count-number">{varietyCount}</div>
+                            </div>
+                            <div className="count trees">
+                                <div className="count-title">Trees Planted</div>
+                                <div className="count-number">{treesCount}</div>
+                            </div>
+                            <div className="count shrubs">
+                                <div className="count-title">No. of Produce Types</div>
+                                <div className="count-number">{produceCount}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
                 <div className="activity-grid">
 
