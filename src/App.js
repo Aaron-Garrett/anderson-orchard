@@ -38,22 +38,31 @@ function App() {
       <LandingPage />
       <footer className="footer">
         <p className="copyright">&copy; 2023 Anderson Orchard. All rights reserved.</p>
-        <div className="footer_category">
+        <div className="footer_category first">
           <h4>Featured Products</h4>
-          <ul>
-            <li>Apples</li>
-            <li>Oranges</li>
-            <li>Pears</li>
-          </ul>
+          <div className="double-column">
+            <ul>
+              <li>Apples</li>
+              <li>Oranges</li>
+            </ul>
+            <ul>
+              <li>Peaches</li>
+              <li>Pears</li>
+            </ul>
+          </div>
         </div>
         <div className="footer_category">
           <h4>Attractions</h4>
-          <ul>
-            <li>Hayrides</li>
-            <li>Apple Picking</li>
-            <li>Apple Barn</li>
-            <li>Field Trips</li>
-          </ul>
+          <div className="double-column">
+            <ul>
+              <li>Hayrides</li>
+              <li>Apple Picking</li>
+            </ul>
+            <ul>
+              <li>Pumpkin Patch</li>
+              <li>Apple Barn</li>
+            </ul>
+          </div>
         </div>
         <div className="footer_category">
           <h4>Forms</h4>
@@ -68,11 +77,12 @@ function App() {
             <ul>
               <li>Hours of Operation</li>
               <li>Orchard Map</li>
-              <li>Mailing List</li>
             </ul>
             <ul>
               <li>News</li>
               <li>Directions</li>
+            </ul>
+            <ul>
               <li>Contact Us</li>
               <li>Our History</li>
             </ul>
