@@ -200,6 +200,19 @@ li {
     width: 50%;
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .modal-body {
@@ -335,7 +348,7 @@ li {
     }
 
     .top-splash {
-        height: 80%;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -343,7 +356,7 @@ li {
     }
 
     .grown {
-        max-height: 20%;
+        height: 20%;
     }
 
     .grown .grown-wrap .grown-intro {
