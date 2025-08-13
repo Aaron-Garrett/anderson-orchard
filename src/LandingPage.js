@@ -61,7 +61,7 @@ const LandingPage = () => {
     return (
         <main className="landing-page">
             <article>
-                <div className="splashscreen" id="desktop-splash">
+                <section className="splashscreen" id="desktop-splash">
                     <video
                         autoPlay
                         muted
@@ -78,7 +78,7 @@ const LandingPage = () => {
                             the best produce to our guests while giving them a memorable experience
                             and supporting local growers.</p>
                     </div>
-                    <div className="grown">
+                    <div className="grown" aria-label="Growth Statistics">
                         <div className="grown-wrap">
                             <div className="grown-intro">How We've Grown</div>
                             <div className="counts-wrap">
@@ -101,8 +101,8 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="splashscreen" id="mobile-splash">
+                </section>
+                <section className="splashscreen" id="mobile-splash">
                     <div className="top-splash">
                         <video
                             autoPlay
@@ -144,9 +144,9 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="activity-grid">
-                    <div className="activity-card" id="u-pick" onClick={(e) => { setAllModalsClosed(e); setIsUPickModalOpen(true); e.preventDefault(); }}>
+                </section>
+                <section className="activity-grid" aria-label="Orchard Activities">
+                    <article className="activity-card" id="u-pick" role="button" aria-label="Open U-Pick Modal" onClick={(e) => { setAllModalsClosed(e); setIsUPickModalOpen(true); e.preventDefault(); }}>
                         <img className="icon" src={require('./img/orchard_icon.png')} alt="U-Pick" />
                         <h3>U-Pick</h3>
                         <p>Stroll through our fields and hand-pick the season's freshest fruits and veggies.</p>
@@ -156,9 +156,9 @@ const LandingPage = () => {
                             <li>→ Pumpkins</li>
                             <li>→ and More!</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div className="activity-card" id="apple-barn" onClick={(e) => { setAllModalsClosed(e); setIsAppleBarnModalOpen(true); e.preventDefault(); }}>
+                    <article className="activity-card" id="apple-barn" role="button" aria-label="Open Apple Barn Modal" onClick={(e) => { setAllModalsClosed(e); setIsAppleBarnModalOpen(true); e.preventDefault(); }}>
                         <img className="icon" src={require('./img/apple_barn_icon.png')} alt="Apple Barn" />
                         <h3>Apple Barn</h3>
                         <p>Step inside for farm-fresh goodness and cozy treats:</p>
@@ -168,9 +168,9 @@ const LandingPage = () => {
                             <li>→ Homemade cider & tasty concessions</li>
                             <li>→ and More!</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div className="activity-card" id="apple-festival" onClick={(e) => { setAllModalsClosed(e); setIsAppleFestivalModalOpen(true); e.preventDefault(); }}>
+                    <article className="activity-card" id="apple-festival" role="button" aria-label="Open Apple Festival Modal" onClick={(e) => { setAllModalsClosed(e); setIsAppleFestivalModalOpen(true); e.preventDefault(); }}>
                         <img className="icon" src={require('./img/festival_icon.png')} alt="Apple Festival" />
                         <h3>Apple Festival</h3>
                         <p>Celebrate harvest season with:</p>
@@ -180,9 +180,9 @@ const LandingPage = () => {
                             <li>→ Fresh-Pressed Cider</li>
                             <li>→ and More!</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div className="activity-card" id="playground" onClick={(e) => { setAllModalsClosed(e); setIsPlaygroundModalOpen(true); e.preventDefault(); }}>
+                    <article className="activity-card" id="playground" role="button" aria-label="Open Playground Modal" onClick={(e) => { setAllModalsClosed(e); setIsPlaygroundModalOpen(true); e.preventDefault(); }}>
                         <img className="icon" src={require('./img/playground_icon.png')} alt="Playground" />
                         <h3>Child-Friendly Activities</h3>
                         <p>Let the kids explore while you relax and soak in the scenic farm views.</p>
@@ -192,12 +192,14 @@ const LandingPage = () => {
                             <li>→ Playground</li>
                             <li>→ and More!</li>
                         </ul>
-                    </div>
+                    </article>
+                </section>
+                <section className="modals" aria-label="Activity Modals">
                     {isUPickModalOpen && (
-                        <div className="modal-overlay" onClick={() => setIsUPickModalOpen(false)}>
-                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <div className="modal-overlay" role="button" onClick={() => setIsUPickModalOpen(false)}>
+                            <div className="modal-content" role="button" onClick={e => e.stopPropagation()}>
                                 <div className="modal-top">
-                                    <button className="close-button" onClick={() => setIsUPickModalOpen(false)}>×</button>
+                                    <button className="close-button" aria-label="Close U-Pick Modal" onClick={() => setIsUPickModalOpen(false)}>×</button>
                                     <h2>U-Pick Experience</h2>
                                 </div>
                                 <div className="modal-body">
@@ -247,10 +249,10 @@ const LandingPage = () => {
                         </div>
                     )}
                     {isAppleBarnModalOpen && (
-                        <div className="modal-overlay" onClick={() => setIsAppleBarnModalOpen(false)}>
-                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <div className="modal-overlay" role="button" onClick={() => setIsAppleBarnModalOpen(false)}>
+                            <div className="modal-content" role="button" onClick={e => e.stopPropagation()}>
                                 <div className="modal-top">
-                                    <button className="close-button" onClick={() => setIsAppleBarnModalOpen(false)}>×</button>
+                                    <button className="close-button" aria-label="Close Apple Barn Modal" onClick={() => setIsAppleBarnModalOpen(false)}>×</button>
                                     <h2>Apple Barn Experience</h2>
                                 </div>
                                 <div className="modal-body">
@@ -299,10 +301,10 @@ const LandingPage = () => {
                         </div>
                     )}
                     {isAppleFestivalModalOpen && (
-                        <div className="modal-overlay" onClick={() => setIsAppleFestivalModalOpen(false)}>
-                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <div className="modal-overlay" role="button" onClick={() => setIsAppleFestivalModalOpen(false)}>
+                            <div className="modal-content" role="button" onClick={e => e.stopPropagation()}>
                                 <div className="modal-top">
-                                    <button className="close-button" onClick={() => setIsAppleFestivalModalOpen(false)}>×</button>
+                                    <button className="close-button" aria-label="Close Apple Festival Modal" onClick={() => setIsAppleFestivalModalOpen(false)}>×</button>
                                     <h2>Apple Festival Experience</h2>
                                 </div>
                                 <div className="modal-body">
@@ -339,10 +341,10 @@ const LandingPage = () => {
                         </div>
                     )}
                     {isPlaygroundModalOpen && (
-                        <div className="modal-overlay" onClick={() => setIsPlaygroundModalOpen(false)}>
-                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <div className="modal-overlay" role="button" onClick={() => setIsPlaygroundModalOpen(false)}>
+                            <div className="modal-content" role="button" onClick={e => e.stopPropagation()}>
                                 <div className="modal-top">
-                                    <button className="close-button" onClick={() => setIsPlaygroundModalOpen(false)}>×</button>
+                                    <button className="close-button" aria-label="Close Playground Modal" onClick={() => setIsPlaygroundModalOpen(false)}>×</button>
                                     <h2>Child-Friendly Experience</h2>
                                 </div>
                                 <div className="modal-body">
@@ -364,7 +366,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                     )}
-                </div>
+                </section>
             </article>
         </main >
     );
