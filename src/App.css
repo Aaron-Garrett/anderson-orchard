@@ -7,6 +7,11 @@
   border: none;
 }
 
+.hamburger {
+  font-size: 1.5rem;
+  color: #2d5a27;  /* deep sage green */
+}
+
 .navbar {
   display: none;
 }
