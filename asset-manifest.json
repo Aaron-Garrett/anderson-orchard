@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anderson-orchard/static/css/main.20020a37.css",
-    "main.js": "/anderson-orchard/static/js/main.d4c50204.js",
+    "main.css": "/anderson-orchard/static/css/main.ec44e0a1.css",
+    "main.js": "/anderson-orchard/static/js/main.b9becd53.js",
     "static/js/453.79f317e4.chunk.js": "/anderson-orchard/static/js/453.79f317e4.chunk.js",
     "static/media/splash_video.mp4": "/anderson-orchard/static/media/splash_video.20d1e7657e2ccf781889.mp4",
     "static/media/orchard_icon.png": "/anderson-orchard/static/media/orchard_icon.7f55a9983e44ac720cbb.png",
@@ -47,12 +47,12 @@
     "static/media/open-sans-greek-ext-400-normal.woff": "/anderson-orchard/static/media/open-sans-greek-ext-400-normal.ab356a4aeff791f88882.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/anderson-orchard/static/media/roboto-greek-ext-400-normal.85384e1ce5cc0ef0c609.woff",
     "index.html": "/anderson-orchard/index.html",
-    "main.20020a37.css.map": "/anderson-orchard/static/css/main.20020a37.css.map",
-    "main.d4c50204.js.map": "/anderson-orchard/static/js/main.d4c50204.js.map",
+    "main.ec44e0a1.css.map": "/anderson-orchard/static/css/main.ec44e0a1.css.map",
+    "main.b9becd53.js.map": "/anderson-orchard/static/js/main.b9becd53.js.map",
     "453.79f317e4.chunk.js.map": "/anderson-orchard/static/js/453.79f317e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20020a37.css",
-    "static/js/main.d4c50204.js"
+    "static/css/main.ec44e0a1.css",
+    "static/js/main.b9becd53.js"
   ]
 }
