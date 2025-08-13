@@ -301,12 +301,44 @@ li {
 }
 
 @media (max-width: 900px) {
+
+    .modal-overlay button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        background-color: #70911d;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Open-Sans', sans-serif;
+    }
+
+    .modal-overlay button:hover {
+        background-color: #435612;
+        transform: translateY(-2px);
+    }    
+
+    .modal-body p {
+        line-height: 1.5;
+    }
+
+    .sublist li {
+        padding-left: 1.5rem;
+    }
+
     .activity-card {
         padding: 1rem;
     }
 
     .activity-card h3 {
         font-size: 1.2rem;
+    }
+
+    .content p {
+        padding: 0 1rem;
+        line-height: 1.5;
     }
 
     .activity-card p,
@@ -331,6 +363,20 @@ li {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000;
+    }
+
+    .modal-body ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal-body ul li {
+        width: 100%;
     }
 
     .top-splash {
