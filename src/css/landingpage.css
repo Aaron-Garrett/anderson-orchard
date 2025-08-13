@@ -40,11 +40,11 @@ li {
     width: 100%;
 }
 
-.desktop-splash {
+#desktop-splash {
     display: flex;
 }
 
-.mobile-splash {
+#mobile-splash {
     display: none;
 }
 
@@ -397,11 +397,11 @@ li {
         font-size: 1.5rem;
     }
 
-    .desktop-splash {
+    #desktop-splash {
         display: none;
     }
 
-    .mobile-splash {
+    #mobile-splash {
         display: flex;
     }
 

@@ -53,7 +53,7 @@ const LandingPage = () => {
     return (
         <main className="landing-page">
             <article>
-                <div className="splashscreen desktop-splash">
+                <div className="splashscreen" id="desktop-splash">
                     <video
                         autoPlay
                         muted
@@ -92,7 +92,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="splashscreen mobile-splash">
+                <div className="splashscreen" id="mobile-splash">
                     <div className="top-splash">
                         <video
                             autoPlay
@@ -254,10 +254,10 @@ const LandingPage = () => {
                                         <p>Kids can come and play on the playground while you enjoy your time!<br />
                                             We have:</p>
                                         <ul>
-                                            <li>Slides</li>
-                                            <li>Climbing structures</li>
-                                            <li>Sandbox</li>
+                                            <li>Straw Pile (in the fall)</li>
                                             <li>Swings</li>
+                                            <li>Education Center</li>
+                                            <li>Playground</li>
                                         </ul>
                                     </div>
                                     <div className="modal-body-part">
