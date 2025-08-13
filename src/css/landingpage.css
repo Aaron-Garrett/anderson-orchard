@@ -300,25 +300,25 @@ li {
     margin-bottom: 1rem;
 }
 
+.modal-overlay button {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #70911d;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.modal-overlay button:hover {
+    background-color: #435612;
+    transform: translateY(-2px);
+}
+
 @media (max-width: 900px) {
-
-    .modal-overlay button {
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
-        background-color: #70911d;
-        color: white;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        font-family: 'Open-Sans', sans-serif;
-    }
-
-    .modal-overlay button:hover {
-        background-color: #435612;
-        transform: translateY(-2px);
-    }    
 
     .modal-body p {
         line-height: 1.5;
@@ -359,10 +359,18 @@ li {
         position: fixed;
         width: 90%;
         height: auto;
+        max-height: 90vh;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
         top: 50vh;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 
     .modal-body ul {
