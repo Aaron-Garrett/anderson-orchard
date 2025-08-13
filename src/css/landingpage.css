@@ -337,6 +337,10 @@ li {
         align-items: center;
     }
 
+    .grown {
+        max-height: 20%;
+    }
+
     .grown .grown-wrap .grown-intro {
         font-size: 27px;
         font-size: 1.25rem;
