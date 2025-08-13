@@ -40,6 +40,14 @@ li {
     width: 100%;
 }
 
+.desktop-splash {
+    display: flex;
+}
+
+.mobile-splash {
+    display: none;
+}
+
 .splashscreen {
     position: relative;
     width: 100%;
@@ -62,7 +70,8 @@ li {
     z-index: 0;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: brightness(0.6);  /* This darkens the video */
+    filter: brightness(0.6);
+    /* This darkens the video */
 }
 
 .splashscreen::before {
@@ -72,7 +81,8 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent black overlay */
     z-index: 1;
 }
 
@@ -154,7 +164,7 @@ li {
     justify-content: center;
 }
 
- .grown .grown-wrap .count {
+.grown .grown-wrap .count {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -237,55 +247,57 @@ li {
 
 
 .activities {
-  padding: 3rem 1rem;
-  background: #faf7f2;
-  text-align: center;
+    padding: 3rem 1rem;
+    background: #faf7f2;
+    text-align: center;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 .activity-grid {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    position: relative;
+    background: #faf7f2;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .activity-card {
-  background: #faf7f2;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color .5s ease;
-  text-align: left;
+    background: #faf7f2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color .5s ease;
+    text-align: left;
 }
 
 .activity-card h3 {
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
 }
 
-.activity-card p, .activity-card li {
-  font-size: 1rem;
-  line-height: 1.5;
+.activity-card p,
+.activity-card li {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .activity-card ul {
-  padding-left: 1rem;
-  margin-top: 0.5rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
 }
 
 .activity-card:hover {
-  transform: translateY(-5px);
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -295,35 +307,42 @@ li {
 }
 
 @media (max-width: 768px) {
-  .activity-card {
-    padding: 1rem;
-  }
+    .activity-card {
+        padding: 1rem;
+    }
 
-  .activity-card h3 {
-    font-size: 1.2rem;
-  }
+    .activity-card h3 {
+        font-size: 1.2rem;
+    }
 
-  .activity-card p, .activity-card li {
-    font-size: 0.9rem;
-  }
+    .activity-card p,
+    .activity-card li {
+        font-size: 0.9rem;
+    }
 
-  .icon {
-    height: 4rem;
-  }
+    .icon {
+        height: 4rem;
+    }
 
-  .modal-overlay {
-    width: 100%;
-    height: 100%;
-}
+    .modal-overlay {
+        width: 100%;
+        height: 100%;
+    }
 
-.splashscreen {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
+    .top-splash {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-splash {
+        display: none;
+    }
+
+    .mobile-splash {
+        display: flex;
+    }
+
 }
