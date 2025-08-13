@@ -57,7 +57,6 @@ const LandingPage = () => {
                     <video
                         autoPlay
                         muted
-                        loop
                         playsInline
                     >
                         <source src={require('./assets/splash_video.mp4')} type="video/mp4" />
@@ -97,7 +96,6 @@ const LandingPage = () => {
                         <video
                             autoPlay
                             muted
-                            loop
                             playsInline
                         >
                             <source src={require('./assets/splash_video.mp4')} type="video/mp4" />
