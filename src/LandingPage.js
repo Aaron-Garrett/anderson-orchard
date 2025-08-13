@@ -19,7 +19,7 @@ const LandingPage = () => {
             let allComplete = false;
 
             setYearCount(prevCount => {
-                if (prevCount >= 40) return prevCount;
+                if (prevCount >= 56) return prevCount;
                 allComplete = false;
                 return prevCount + 2;
             });
@@ -202,23 +202,34 @@ const LandingPage = () => {
                                 </div>
                                 <div className="modal-body">
                                     <div className="modal-body-part">
+                                        <h3>Picking Options:</h3>
                                         <p>Come experience the joy of picking your own fresh fruits!</p>
-                                        <h3>Seasons:</h3>
-                                        <p>🌳 Apples (May - August)</p>
-                                        <ul className="sublist">
-                                            <li>🍎 Ginger Gold</li>
-                                            <li>🍎 Red Free</li>
-                                            <li>🍎 Elstar (tart, great for cooking, lots of flavor)</li>
-                                        </ul>
-                                        <p>🌳 Apples (September - October)</p>
-                                        <ul className="sublist">
-                                            <li>🍏 Red Delicious</li>
-                                            <li>🍏 Fuji</li>
-                                            <li>🍏 Granny Smith (tart, great for cooking, lots of flavor)</li>
-                                        </ul>
-                                        <p>🌳 Raspberries (July - August)</p>
-                                        <p>🌳 Pumpkins (October)</p>
-                                        <p>🌳 Blackberries (July - August)</p>
+                                        <div className="subsection">
+                                            <div className="subsection-item">
+                                                <p>🌳 Apples - Summer</p>
+                                                <ul className="sublist">
+                                                    <li>🍎 Ginger Gold</li>
+                                                    <li>🍎 Red Free</li>
+                                                    <li>🍎 Elstar</li>
+                                                </ul>
+                                            </div>
+                                            <div className="subsection-item">
+                                                <p>🌳 Apples - Fall</p>
+                                                <ul className="sublist">
+                                                    <li>🍏 Red Delicious</li>
+                                                    <li>🍏 Fuji</li>
+                                                    <li>🍏 Granny Smith</li>
+                                                </ul>
+                                            </div>
+                                            <div className="subsection-item">
+                                                <p>Other Produce:</p>
+                                                <ul>
+                                                    <li>🌳 Raspberries</li>
+                                                    <li>🌳 Pumpkins</li>
+                                                    <li>🌳 Blackberries</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="modal-body-part">
                                         <h3>Hours:</h3>
@@ -249,27 +260,39 @@ const LandingPage = () => {
                                             <li>🍎 Concession Stand</li>
                                             <li>🍎 Restrooms</li>
                                             <li>🍎 Seating Areas</li>
-                                            <li>🍎 Freshly-Picked Fruits and Vegetables</li>
+                                            <li>🍎 Freshly-Picked Produce</li>
                                         </ul>
                                     </div>
                                     <div className="modal-body-part">
                                         <h3>Hours:</h3>
                                         <p>Daily 9:00 AM - 6:00 PM</p>
                                         <h3>Available Produce:</h3>
-                                        <ul>
-                                            <li>🌶️ Peppers: Both mild and spicy</li>
-                                            <li>🫘 Green Beans</li>
-                                            <li>🫐 Blueberries</li>
-                                            <li>🍑 Peaches</li>
-                                            <li>🍉 Watermelon</li>
-                                            <li>🌽 Corn</li>
-                                            <li>🍒 Cherries</li>
-                                            <li>🥬 Cabbage</li>
-                                            <li>🍈 Cantaloupe</li>
-                                            <li>🍅 Tomatoes: Red, Yellow, Green, Grape</li>
-                                            <li>🥒 Cucumbers</li>
-                                            <li>🎃 Squash</li>
-                                        </ul>
+                                        <div className="subsection">
+                                            <div className="subsection-item">
+                                                <ul>
+                                                    <li>🌶️ Peppers</li>
+                                                    <li>🫘 Green Beans</li>
+                                                    <li>🫐 Blueberries</li>
+                                                    <li>🍑 Peaches</li>
+                                                </ul>
+                                            </div>
+                                            <div className="subsection-item">
+                                                <ul>
+                                                    <li>🍉 Watermelon</li>
+                                                    <li>🌽 Corn</li>
+                                                    <li>🍒 Cherries</li>
+                                                    <li>🥬 Cabbage</li>
+                                                </ul>
+                                            </div>
+                                            <div className="subsection-item">
+                                                <ul>
+                                                    <li>🍈 Cantaloupe</li>
+                                                    <li>🍅 Tomatoes</li>
+                                                    <li>🥒 Cucumbers</li>
+                                                    <li>🎃 Squash</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -293,15 +316,23 @@ const LandingPage = () => {
                                         <h3>Hours:</h3>
                                         <p>Daily 9:00 AM - 6:00 PM</p>
                                         <h3>Activities:</h3>
-                                        <ul>
-                                            <li>🐐 Petting Zoo</li>
-                                            <li>🎃 Pumpkin Patch</li>
-                                            <li> Vendor Booths</li>
-                                            <li>🌾 Hay Pile</li>
-                                            <li>🍎 Apple Picking</li>
-                                            <li>🎵 Live Music</li>
-                                            <li>🚚 Food Trucks</li>
-                                        </ul>
+                                        <div className="subsection">
+                                            <div className="subsection-item">
+                                                <ul>
+                                                    <li>🐐 Petting Zoo</li>
+                                                    <li>🎃 Pumpkin Patch</li>
+                                                    <li> Vendor Booths</li>
+                                                    <li>🌾 Hay Pile</li>
+                                                </ul>
+                                            </div>
+                                            <div className="subsection-item">
+                                                <ul>
+                                                    <li>🍎 Apple Picking</li>
+                                                    <li>🎵 Live Music</li>
+                                                    <li>🚚 Food Trucks</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
