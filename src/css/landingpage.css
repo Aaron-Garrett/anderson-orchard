@@ -116,7 +116,7 @@ li {
     /* margin-top: 95vh; */
     background-color: #ebebeb;
     position: relative;
-    padding: 30px;
+    padding: 24px;
     z-index: 30;
     height: auto;
     width: 100%;
@@ -146,7 +146,7 @@ li {
     text-align: right;
     display: flex;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 24px;
     border-right: 4px solid #435612;
 }
 
@@ -165,8 +165,8 @@ li {
 }
 
 .grown .grown-wrap .count {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -324,6 +324,11 @@ li {
         height: 4rem;
     }
 
+    .splashscreen {
+        min-height: 100vh;
+        height: auto;
+    }
+
     .modal-overlay {
         width: 100%;
         height: 100%;
@@ -347,16 +352,17 @@ li {
         text-transform: uppercase;
         max-width: 145px;
         font-weight: 700;
+        padding-left: 24px;
         text-align: right;
         display: flex;
         align-items: center;
-        padding-right: 30px;
+        padding-right: 24px;
         border-right: 4px solid #435612;
     }
 
     .grown .grown-wrap .count {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -375,7 +381,7 @@ li {
     .grown .grown-wrap .count .count-number {
         color: #435612;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .desktop-splash {
