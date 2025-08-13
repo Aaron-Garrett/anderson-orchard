@@ -13,7 +13,7 @@
 
 .navbar.visible {
   display: block;
-  height: 75vh;
+  height: auto;
   margin-top: 5vh;
   width: 50%;
   position: absolute;
@@ -33,6 +33,7 @@
   flex-direction: column;
   align-items: space-around;
   justify-content: center;
+  gap: 24px;
 }
 
 .nav-links a {
