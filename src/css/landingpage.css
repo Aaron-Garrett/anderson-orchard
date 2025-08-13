@@ -324,8 +324,13 @@ li {
     }
 
     .modal-overlay {
-        width: 100%;
+        position: fixed;
+        width: 90%;
         height: auto;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
     }
 
     .top-splash {
