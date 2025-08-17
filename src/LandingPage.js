@@ -193,8 +193,6 @@ const LandingPage = () => {
                             <li>→ and More!</li>
                         </ul>
                     </article>
-                </section>
-                <section className="modals" aria-label="Activity Modals">
                     {isUPickModalOpen && (
                         <div className="modal-overlay" role="button" onClick={() => setIsUPickModalOpen(false)}>
                             <div className="modal-content" role="button" onClick={e => e.stopPropagation()}>
